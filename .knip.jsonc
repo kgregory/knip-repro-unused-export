@@ -1,0 +1,26 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema-jsonc.json",
+  "ignore": ["**/__mocks__/**"],
+  "includeEntryExports": true,
+  "rules": {
+    "files": "warn", // cannot ignore unused files which might exist as precursor work
+    "dependencies": "error",
+    "devDependencies": "error",
+    "optionalPeerDependencies": "error",
+    "unlisted": "error",
+    "binaries": "error",
+    "unresolved": "error",
+    "exports": "warn", // still open issues to squash
+    "types": "warn", // still open issues to squash
+    "nsExports": "off", // off by default
+    "nsTypes": "off", // off by default
+    "enumMembers": "off", // many open issues still; some might not be resolvable without changes to knip
+    "classMembers": "off", // off by default -- consumes a lot of memory and may cause crashes
+    "duplicates": "error"
+  },
+  "workspaces": {
+    "apps/app.repro": {
+      "entry": ["src/index.{js,ts,tsx}"]
+    }
+  }
+}

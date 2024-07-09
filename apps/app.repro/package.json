@@ -1,0 +1,16 @@
+{
+  "name": "@example/app.repro",
+  "description": "Reproduction",
+  "private": true,
+  "sideEffects": true,
+  "dependencies": {
+    "@example/app_common.ui": "workspace:*",
+    "react": "18.3.0-canary-c3048aab4-20240326",
+    "react-dom": "18.3.0-canary-c3048aab4-20240326"
+  },
+  "devDependencies": {
+    "@example/tsconfig": "workspace:*",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0"
+  }
+}

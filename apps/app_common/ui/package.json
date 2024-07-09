@@ -1,0 +1,27 @@
+{
+  "name": "@example/app_common.ui",
+  "description": "UI library for React apps",
+  "private": true,
+  "exports": {
+    "./icons": "./src/icons/index.ts",
+    "./icons/*": "./src/icons/*"
+  },
+  "sideEffects": true,
+  "peerDependencies": {
+    "react": "18.3.0-canary-c3048aab4-20240326",
+    "react-dom": "18.3.0-canary-c3048aab4-20240326"
+  },
+  "dependencies": {
+    "@emotion/react": "11.11.4",
+    "@emotion/styled": "11.11.5",
+    "@mui/icons-material": "5.15.20",
+    "@mui/material": "5.15.20"
+  },
+  "devDependencies": {
+    "@example/tsconfig": "workspace:*",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "react": "18.3.0-canary-c3048aab4-20240326",
+    "react-dom": "18.3.0-canary-c3048aab4-20240326"
+  }
+}

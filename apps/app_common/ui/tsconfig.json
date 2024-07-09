@@ -1,0 +1,12 @@
+{
+  "extends": "@example/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "types": ["react"]
+  },
+  "include": [
+    "src/**/*", // source folder
+    "./.*.cjs", // root commonjs files
+    "./*.js", // root javascript files
+    "./.*.js" // root javascript config files
+  ]
+}

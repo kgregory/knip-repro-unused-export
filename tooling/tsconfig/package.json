@@ -1,0 +1,9 @@
+{
+  "name": "@example/tsconfig",
+  "description": "Typescript configuration bases",
+  "version": "2.0.0",
+  "sideEffects": false,
+  "peerDependencies": {
+    "typescript": "^5.5.2"
+  }
+}
